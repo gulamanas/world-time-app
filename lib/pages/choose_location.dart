@@ -13,15 +13,15 @@ class _ChooseLocationState extends State<ChooseLocation> {
   // int count = 0;
 
   void getData() async {
-    await Future.delayed(Duration(seconds: 3), () {
-      print('Yoshi');
+    String username = await Future.delayed(Duration(seconds: 3), () {
+      return 'Yoshi';
     });
 
-    Future.delayed(Duration(seconds: 2), () {
-      print('Ajay');
+    String bio = await Future.delayed(Duration(seconds: 2), () {
+      return 'Developer, coder and designer';
     });
 
-    print('Anas');
+    print('$username - $bio');
   }
 
   @override
