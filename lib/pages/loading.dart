@@ -13,7 +13,7 @@ class Loading extends StatefulWidget {
 }
 
 class _LoadingState extends State<Loading> {
-  // String time = 'loading';
+  String time = 'loading';
 
   void setupWorldTime() async {
     WorldTime instance = WorldTime(
@@ -45,7 +45,7 @@ class _LoadingState extends State<Loading> {
       appBar: AppBar(
         title: Text('Loading'),
       ),
-      // body: Text(time),
+      body: Text(time),
     );
   }
 }
