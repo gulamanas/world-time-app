@@ -32,7 +32,8 @@ class WorldTime {
 
       // create datetime object
       DateTime now = DateTime.parse(datetime);
-      now = now.add(Duration(hours: int.parse(offset), minutes: 30));
+      now = now.add(Duration(hours: int.parse(offset)));
+      // now = now.add(Duration(hours: int.parse(offset), minutes: 30));
       // time = now.toString();
 
       // set time property
